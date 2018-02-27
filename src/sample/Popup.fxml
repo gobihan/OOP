@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="164.0" prefWidth="319.0" xmlns="http://javafx.com/javafx/8.0.111"
+            fx:controller="sample.Controller">
+    <children>
+        <TextField fx:id="buy" layoutX="235.0" layoutY="27.0" onAction="#investStock" prefHeight="25.0"
+                   prefWidth="69.0"/>
+        <TextField fx:id="sell" layoutX="235.0" layoutY="58.0" onAction="#investStock" prefHeight="25.0"
+                   prefWidth="69.0"/>
+        <Label layoutX="7.0" layoutY="31.0" text="How many shares do you want to invest in "/>
+        <Label layoutX="7.0" layoutY="62.0" text="How many shares do you want to sell"/>
+        <Button fx:id="investAgain" layoutX="235.0" layoutY="89.0" mnemonicParsing="false" onAction="#investStockAgain"
+                text="Invest"/>
+        <Label fx:id="costOfShares" layoutX="9.0" layoutY="121.0" prefHeight="25.0" prefWidth="294.0"/>
+    </children>
+</AnchorPane>
